@@ -7,7 +7,7 @@ const skillsData = [
   },
   {
     category: 'Frontend',
-    skills: ['HTML5', 'CSS3', 'Tailwind CSS', 'Bootstrap', 'React.js', 'JSX'],
+    skills: ['HTML5', 'CSS3', 'Tailwind CSS', 'Bootstrap', 'React.js'],
   },
   {
     category: 'Backend',
@@ -15,26 +15,25 @@ const skillsData = [
   },
   {
     category: 'Databases',
-    skills: ['PostgreSQL', 'MySQL', 'Oracle', 'SQL', 'PL/SQL'],
+    skills: ['PostgreSQL', 'MongoDB', 'Oracle', 'SQL', 'PL/SQL'],
   },
   {
     category: 'Tools',
-    skills: ['Git', 'GitHub', 'VS Code', 'Postman', 'npm', 'Netlify', 'Vercel'],
+    skills: ['Git', 'GitHub', 'VS Code', 'Postman', 'Netlify', 'Vercel'],
   },
   {
     category: 'CS Fundamentals',
-    skills: ['OOP', 'DSA (Data Structures and Algorithms)', 'OS', 'DBMS'],
+    skills: ['OOP', 'DSA (Data Structures and Algorithms)', 'OS', 'DBMS','CN'],
   },
 ];
 
 const Skills = () => {
   return (
-    <div className="text-black space-y-8 ">
-      <h2 className="text-3xl font-bold text-center mb-4">My Skills</h2>
+    <div className="text-black space-y-6 ">
       {skillsData.map((section, index) => (
         <div key={index}>
-          <h3 className="text-xl font-semibold mb-2">{section.category}</h3>
-          <div className="flex flex-wrap gap-2">
+          <h3 className="font-semibold mb-2">{section.category}</h3>
+          <div className="flex flex-wrap gap-1">
             {section.skills.map((skill, idx) => (
               <span
                 key={idx}

@@ -3,22 +3,21 @@ import { FaGithub, FaLinkedin, FaTwitter, FaExternalLinkAlt, FaYoutube, FaInstag
 import { SiLeetcode, SiGeeksforgeeks, SiCodechef, SiHackerrank } from 'react-icons/si';
 
 const profiles = [
-  { icon: SiLeetcode, color: '#FFA116', link: 'https://leetcode.com/your-username' },
-  { icon: SiGeeksforgeeks, color: '#0F9D58', link: 'https://auth.geeksforgeeks.org/user/your-username' },
-  { icon: SiCodechef, color: '#5B4638', link: 'https://www.codechef.com/users/your-username' },
-  { icon: FaGithub, color: '#000000', link: 'https://github.com/your-username' },
-  { icon: FaLinkedin, color: '#0A66C2', link: 'https://linkedin.com/in/your-username' },
-  { icon: FaTwitter, color: 'blue', link: 'https://twitter.com/your-username' },
-  { icon: SiHackerrank, color: '#2EC866', link: 'https://www.hackerrank.com/your-username' },
-  { icon: FaExternalLinkAlt, color: '#555555', link: 'https://your-portfolio-link.com' },
-  { icon: FaYoutube, color: 'red', link: 'https://youtube.com/your-channel' },
-  { icon: FaInstagram, color: '#E1306C', link: 'https://instagram.com/your-username' },
+  { icon: SiLeetcode, color: '#FFA116', link: 'https://leetcode.com/u/SAHARSH_14/' },
+  { icon: SiGeeksforgeeks, color: '#0F9D58', link: 'https://www.geeksforgeeks.org/user/sde_saharsh/' },
+  { icon: SiCodechef, color: '#5B4638', link: 'https://www.codechef.com/users/saharshx' },
+  { icon: FaGithub, color: '#000000', link: 'https://github.com/sde-saharsh' },
+  { icon: FaLinkedin, color: '#0A66C2', link: 'https://www.linkedin.com/in/saharsh-khalokar-a9a8a731a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },
+  { icon: FaTwitter, color: 'blue', link: 'https://x.com/KhalokarSa51567?t=nwujUj0tuRh2a1n18b3pjw&s=09' },
+  { icon: SiHackerrank, color: '#2EC866', link: 'https://www.hackerrank.com/profile/sde_saharsh' },
+  { icon: FaExternalLinkAlt, color: '#555555', link: 'https://portfoliosaharsh.vercel.app/' },
+  { icon: FaYoutube, color: 'red', link: 'https://www.youtube.com/@sde_saharsh' },
+  { icon: FaInstagram, color: '#E1306C', link: 'https://www.instagram.com/sde_saharsh?igsh=MTc1eHhvODNrbGZ2ZA==' },
 ];
 
 const Profiles = () => {
   return (
     <div className="text-black p-4 flex flex-col items-center">
-      <h2 className="text-3xl font-bold text-center mb-8">My Profiles</h2>
       <div className="grid grid-cols-4 sm:grid-cols-3 md:grid-cols-5 gap-6">
         {profiles.map((profile, index) => {
           const IconComponent = profile.icon;

@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 
 const App = () => {
   return (
-    <div className='min-h-screen bg-[#BFD1D7] dark:bg-gray-900 text-black dark:text-white transition-colors duration-500'>
+    <div className='min-h-screen bg-[#BFD1D7] text-black dark:text-white transition-colors duration-500'>
       <Navbar />
       <Hero />
       <Accordion/>

@@ -3,21 +3,20 @@ import React from 'react'
 const About = () => {
   return (
     <div className="text-black space-y-4">
-      <h2 className="text-2xl font-bold">About Me</h2>
       <p>
-        Hello! I am <span className="font-semibold">Saharsh Khalokar</span>, a passionate and dedicated Computer Science Engineering student at Walchand College of Engineering, Sangli.
+        Hi, my name is <span className="font-semibold">Saharsh Khalokar</span>, a web development enthusiast and DSA learner.
       </p>
       <p>
-        I am enthusiastic about <span className="font-semibold">web development</span>, actively exploring technologies like HTML, CSS, JavaScript, React, Node.js, and MySQL.
+        I love solving problems on <span className="font-semibold">LeetCode</span> and other coding platforms.
       </p>
       <p>
-        I am also keenly interested in solving <span className="font-semibold">Data Structures and Algorithms</span> problems, currently following the TUF Striver course to strengthen my problem-solving skills.
+        Talking about my academics, I am a <span className="font-semibold">Computer Science and Engineering</span> student at <span className="font-semibold">Walchand College of Engineering, Sangli</span>, pursuing a B.Tech degree with a current CGPA of <span className="font-semibold">8.69</span>.
       </p>
       <p>
-        Apart from coding, I am a creative mind, contributing as an <span className="font-semibold">Assistant Design Head</span> in the ACSES club, where I work on creating visually appealing and functional designs.
+        I have a strong interest in core subjects like <span className="font-semibold">OOPs, DBMS,</span> and <span className="font-semibold">Computer Networks</span>.
       </p>
       <p>
-        My goal is to constantly learn, grow, and contribute to impactful projects that can make a difference.
+        I am also a part of the <span className="font-semibold">Microsoft Learn Student Club (MLSC)</span>, where I contribute as a <span className="font-semibold">Finance and Resource Manager</span>.
       </p>
     </div>
   )

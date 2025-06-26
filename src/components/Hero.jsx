@@ -38,7 +38,7 @@ const Hero = () => {
           {/* Social Icons */}
           <div className="flex justify-center items-center gap-6 mt-6 text-4xl text-gray-800">
             <a 
-              href="https://www.linkedin.com/in/sde-saharsh" 
+              href="https://www.linkedin.com/in/saharsh-khalokar-a9a8a731a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="hover:text-blue-600"
@@ -47,7 +47,7 @@ const Hero = () => {
             </a>
 
             <a 
-              href="https://www.instagram.com" 
+              href="https://www.instagram.com/sde_saharsh?igsh=MTc1eHhvODNrbGZ2ZA==" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="hover:text-pink-600"
@@ -56,7 +56,7 @@ const Hero = () => {
             </a>
 
             <a 
-              href="https://www.youtube.com" 
+              href="https://www.youtube.com/@sde_saharsh" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="hover:text-red-600"

@@ -2,23 +2,23 @@ import React from 'react';
 
 const projects = [
   {
-    title: 'Bluestock',
-    image: '/path/to/project1.png', // Replace with your actual image path
+    title: 'IPO_Project',
+    image: './Projects/IPO_Project.png', // Replace with your actual image path
     link: '#',
   },
   {
-    title: 'Project 2',
-    image: '/path/to/project2.png', // Replace with your actual image path
-    link: '#',
+    title: 'Homies-Kitchen',
+    image: './Projects/Kitchen.png', // Replace with your actual image path
+    link: 'https://sde-saharsh.github.io/Homies-Kitchen/',
   },
   {
-    title: 'Project 3',
-    image: '/path/to/project3.png', // Replace with your actual image path
-    link: '#',
+    title: 'Portfolio',
+    image: './Projects/Portfolio.png', // Replace with your actual image path
+    link: 'https://portfoliosaharsh.vercel.app/',
   },
   {
-    title: 'Project 4',
-    image: '/path/to/project4.png', // Replace with your actual image path
+    title: 'Food-blog',
+    image: './Projects/food-blog.png', // Replace with your actual image path
     link: '#',
   },
 ];
@@ -38,7 +38,7 @@ const Projects = () => {
             <img
               src={project.image}
               alt={project.title}
-              className="w-full h-full object-cover transition duration-300 group-hover:blur-sm"
+              className="w-full h-full object-cover transition duration-300 group-hover:scale-[1.1]"
             />
             <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white text-center py-1 text-xs">
               {project.title}
