@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { FaChevronDown, FaChevronUp, FaDownload } from 'react-icons/fa';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, useAnimation } from 'framer-motion';
 import About from '../pages/About';
 import Profiles from '../pages/Profiles';
 import Projects from '../pages/Projects';
@@ -8,15 +8,16 @@ import Skills from '../pages/Skills';
 
 const sections = [
   { title: 'Resume', icon: <FaDownload /> },
-  { title: 'About Me' ,page:<About/>},
-  { title: 'Skills', page:<Skills/> },
-  { title: 'Projects', page:<Projects/> },
-  { title: 'Profiles', page:<Profiles/> },
+  { title: 'About Me', page: <About /> },
+  { title: 'Skills', page: <Skills /> },
+  { title: 'Projects', page: <Projects /> },
+  { title: 'Profiles', page: <Profiles /> },
 ];
 
 const Accordion = () => {
   const [openIndex, setOpenIndex] = useState(null);
   const sectionRefs = useRef([]);
+  const controls = useAnimation();
 
   const toggleSection = (index) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -24,9 +25,16 @@ const Accordion = () => {
 
   useEffect(() => {
     if (openIndex !== null && sectionRefs.current[openIndex]) {
-      sectionRefs.current[openIndex].scrollIntoView({ behavior: 'smooth', block: 'center' });
+      const top = sectionRefs.current[openIndex].offsetTop - 100; // Offset for better centering
+
+      controls.start({
+        y: top,
+        transition: { type: 'spring', stiffness: 100, damping: 20 }
+      }).then(() => {
+        window.scrollTo({ top, behavior: 'smooth' });
+      });
     }
-  }, [openIndex]);
+  }, [openIndex, controls]);
 
   return (
     <div className="bg-[#cbd5d9] flex flex-col items-center justify-center p-4">
